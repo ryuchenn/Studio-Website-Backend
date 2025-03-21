@@ -1,0 +1,182 @@
+.container {
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    padding: 2.5rem 1rem;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-family: $font-family;
+    font-size: 55px;
+    margin-top: 40px;
+  }
+  
+  .controls {
+    max-width: 80rem;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .searchInput {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+  }
+  
+  .filterButton {
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .filterButton:hover {
+    background-color: #4b5563;
+  }
+  
+  .filters {
+    max-width: 80rem;
+    margin: 0 auto 2rem;
+  }
+  
+  .filterGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .filterTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .filterOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .filterOption {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .filterOption.selected {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .filterOption:not(.selected) {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+  }
+  
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+  
+  .projectCard {
+    background-color: #edf3fa;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projectImage {
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    height: 16rem;
+    object-fit: cover;
+  }
+  
+  .projectTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hr{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 1px;
+    background-color: #dae2f0;
+    color: black;
+  }
+
+  .description{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .demoLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+  }
+  
+  .demoButtons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .demoButton {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #e5e7eb;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 7px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+  
+    &:hover {
+      background-color: #99c8fa;
+      transform: scale(1.1);
+    }
+  
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  .projectTechStack,
+  .projectTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .projectTech,
+  .projectTag {
+    padding: 0.25rem 0.5rem;
+    background-color: #e5e7eb;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+  }
+  

@@ -1,0 +1,127 @@
+{
+    "TEST": "英文",
+    
+    "Home": {
+        "Title": "RYU STUDIO",
+        "ShortTitle": "PHOTOGRAPHY, MUSIC, WEB AND APP PRODUCTION IN TORONTO",
+        "Services": "服務",
+
+        "LiveSound": "燈光音響",
+        "LiveSoundDescription": "我們提供了燈光音響設備，並且提供了音控服務，像是演說、樂團表演、詩歌敬拜、DJ表演。",
+        "Photography": "攝影",
+        "PhotographyDescription": "我們提供了婚禮公證、婚禮攝影、人像攝影、證件照、跳舞錄影。",
+        "CodingDescription": "我們提供網頁與APP的軟體設計。",
+
+        "StudioDescription": "Ryu 工作室，提供了攝影、錄影、音樂，我們提供了攝影棚、錄音室在多倫多市中心。我們的工作室可以滿足製作人、音樂人、DJ、攝影師的各種需求。",
+        "Book": "預約",
+        "BookDescription": "請發送你的問題、建議給我們！ 我們會儘快與您聯絡！",
+        "Contact": "聯絡方式",
+        "Learn": "Learn More",
+        "ShortTitle2": "攝影棚",
+        "StudioDescription2": "我們提供無縫牆以及各式節慶造景，提供攝影師創作專業作品",
+        "ShortTitle3": "錄音室",
+        "StudioDescription3": "我們提供錄音室給歌手、樂手進行創作。我們也提供了鼓室租借的服務。",
+        "GalleryTitle": "作品",
+        "AboutUs": "關於我們",
+        "Studio": "工作室"
+    },
+    "Studio": {
+        "MusicStudioTitle": "Music Studio A",
+        "PhotoStudioTitle": "Photo Shoot Studio A",
+        "Overview": "總覽",
+        "Equipment": "設備",
+        "Lighting": "燈光",
+        "Instruments": "樂器",
+        "Microphones": "麥克風",
+
+        "Floor Plans": "工作室",
+        "Price": "價格"
+    },
+    "Portfolio": {
+        "NotFound": "圖片未找到",
+        "Photography": "攝影",
+        "Videography": "影像記錄",
+        "Music": "音樂",
+        "All": "全部",
+
+        "Portrait": "人像",
+        "Wedding": "婚禮",
+        "Pet": "寵物",
+        "Event": "活動",
+        "Product": "產品",
+        "Other": "其他",
+
+        "Movie": "電影",
+        "MV": "MV",
+        "Shorts": "短影音",
+        "Reels": "短影音",
+
+        "DJ": "DJ",
+        "PA": "PA音控",
+        "Recording": "錄音",
+        "Composition": "創作",
+        "LoadMore": "載入更多"
+    },
+    "Project": {
+        "Title": "專案",
+        "Search": "搜尋",
+        "Newest": "最新",
+        "Oldest": "最舊",
+        "Filter": "篩選",
+        "HideFilters": "隱藏",
+        "Date": "時間",
+        "NotFound": "專案未找到",
+        "Details": "細節",
+        "Field": "領域",
+        "Tags": "標籤",
+        "TechStack": "技術"
+    },
+    "Event": {
+        "Title": "活動",
+        "Search": "搜尋",
+        "Newest": "最新",
+        "Oldest": "最舊",
+        "Filter": "篩選",
+        "HideFilters": "隱藏",
+        "Date": "時間",
+        "NotFound": "專案未找到",
+        "Details": "細節",
+        "Field": "領域",
+        "Tags": "標籤",
+        "JoinEvent": "透過Google表單報名"
+    },
+    "About": {
+        "Name": "Ryu Chen",
+        "Profession": "軟體工程師 | 攝影師 | 音樂人",
+        "Description": "嗨! 👋 我是一名軟體工程師，專注在前端、手機軟體開發！",
+        "Skills": "技能",
+        "ProgrammingLanguages": "程式語言技能",
+        "Frontend": "前端開發",
+        "Backend": "後端開發",
+        "Mobile": "手機開發",
+        "Database": "資料庫",
+        "Cloud": "雲服務",
+        "Others": "其他",
+        "Instrument": "樂器",
+        "Music": "音樂",
+        "Photography": "攝影"
+    },
+    "Book": {
+        "Title": "預約",
+        "Description": "請發送你的問題、建議給我們！ 我們會儘快與您聯絡！",
+        "Name": "姓名",
+        "Email": "Email",
+        "PhoneNumber": "電話號碼",
+        "InstagramAccount": "Instagram 帳號",
+        "YourMessage": "你的訊息(250字內)",
+        "Comments": "評論",
+        "Submit": "提交",
+        "SendSuccess": "發送成功!",
+        "SendError": "發送失敗. 請再試一次."
+    },
+    "Contact": {
+        "Profession": "攝影｜燈光音響｜網頁 & APP設計",
+        "Xiaohongshu": "小紅書"
+    }
+}
+  
