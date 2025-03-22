@@ -1,8 +1,13 @@
 import admin from "firebase-admin";
 import { existsSync } from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
 import { serviceAuthBase64 } from "../../constants/DBSetting.ts"
 let serviceAccount: admin.ServiceAccount;
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 if (serviceAuthBase64) {
   serviceAccount = JSON.parse(
@@ -10,15 +15,15 @@ if (serviceAuthBase64) {
     Buffer.from(serviceAuthBase64, "base64").toString("utf-8")
   );
 } else {
-  const filePath = path.resolve("key/firebaseAuth.json");
+  const filePath = path.resolve(__dirname, "../../../key/firebaseAuth.json");
 
   if (existsSync(filePath)) {
-    const jsonModule = await import(`../../../key/firebaseAuth.json`, {
+    const jsonModule = await import(filePath, {
       assert: { type: "json" },
     });
     serviceAccount = jsonModule.default as admin.ServiceAccount;
   } else {
-    throw new Error("FIREBASE_AUTH_B64 not set and fallback JSON file not found.");
+    throw new Error("Firebase credentials not found in env or file.");
   }
 }
 
