@@ -16,6 +16,10 @@ app.use(express.json());
 
 //////////// Register All Routes ////////////
 // registerRoutes(app);
+// import authRouter from "./src/routes/auth/index.ts";
+// app.use("/api/auth", authRouter);
+import eventsRouter from "./src/routes/events/index.ts";
+app.use("/api/events", eventsRouter);
 
 // API Directory
 app.get("/", (req, res) => {
