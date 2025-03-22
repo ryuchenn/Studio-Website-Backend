@@ -1,5 +1,5 @@
 import express from "express";
-import { authDb } from '../../DB/index.ts';
+// import { authDb } from '../../DB/index.ts';
 
 const router = express.Router();
 
@@ -11,14 +11,14 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get("/test_authdb", async (req, res) => {
-    try 
-    {
-      await authDb.collection('test-connection').doc('auth').set({ status: 'OK', timestamp: Date.now() });
-      console.log('Firebase connections successful.');
-    } catch (err) {
-      console.error('Firebase connection failed:', err);
-    }
-});
+// router.get("/test_authdb", async (req, res) => {
+//     try 
+//     {
+//       await authDb.collection('test-connection').doc('auth').set({ status: 'OK', timestamp: Date.now() });
+//       console.log('Firebase connections successful.');
+//     } catch (err) {
+//       console.error('Firebase connection failed:', err);
+//     }
+// });
 
 export default router;
