@@ -14,8 +14,6 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
 
-//////////// Schema ////////////
-
 //////////// Register All Routes ////////////
 registerRoutes(app);
 
