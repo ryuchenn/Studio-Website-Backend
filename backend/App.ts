@@ -3,7 +3,7 @@ dotenv.config();
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
-import registerRoutes from "./src/routes/index.ts"; 
+// import registerRoutes from "./src/routes/index.ts"; 
 const port = process.env.DB_DEFAULT_PORT || 3000;
 const app = express();
 // const path = require("path");
@@ -15,7 +15,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 //////////// Register All Routes ////////////
-registerRoutes(app);
+// registerRoutes(app);
 
 // API Directory
 app.get("/", (req, res) => {
