@@ -19,6 +19,13 @@ app.use(express.json());
 //////////// Register All Routes ////////////
 registerRoutes(app);
 
+// API Directory
+app.get("/", (req, res) => {
+  res.json({
+    message: "Welcome to the Studio Backend System"
+  });
+});
+
 app.listen(port, () => {
     console.log(`Server is running on ${port}`);
 });
