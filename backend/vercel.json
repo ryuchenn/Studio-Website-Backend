@@ -14,8 +14,7 @@
     ],
     "functions": {
       "api/**/*.ts": {
-        "runtime": "nodejs18.x",
-        "experimentalJsonModules": true
+        "runtime": "nodejs18.x"
       }
     }
 }
