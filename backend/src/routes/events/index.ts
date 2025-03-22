@@ -1,4 +1,5 @@
 import express from "express";
+import { mockEvents } from "../../constants/eventsMock.mock.ts";
 
 const router = express.Router();
 
@@ -10,5 +11,8 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.get('/MockData', (req, res) => {
+  res.status(200).json(mockEvents);
+});
 
-module.exports = router;
+export default router;
