@@ -1,4 +1,6 @@
 import admin from 'firebase-admin';
+import { existsSync } from "fs";
+import path from "path";
 import { serviceEventBase64 } from "../../constants/DBSetting.ts"
 let serviceAccount: admin.ServiceAccount;
 
@@ -8,10 +10,16 @@ if (serviceEventBase64) {
     Buffer.from(serviceEventBase64, "base64").toString("utf-8")
   );
 } else {
-  const jsonModule = await import("../../../key/firebaseEvent.json", {
-    assert: { type: "json" },
-  });
-  serviceAccount = jsonModule.default as admin.ServiceAccount;
+  const filePath = path.resolve("key/firebaseEvent.json");
+
+  if (existsSync(filePath)) {
+    const jsonModule = await import(`../../../key/firebaseEvent.json`, {
+      assert: { type: "json" },
+    });
+    serviceAccount = jsonModule.default as admin.ServiceAccount;
+  } else {
+    throw new Error("FIREBASE_EVENT_B64 not set and fallback JSON file not found.");
+  }
 }
 
 const eventApp = admin.initializeApp(
